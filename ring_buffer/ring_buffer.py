@@ -10,6 +10,20 @@ class RingBuffer:
 
 
     def append(self, item):
+        # first have to check if the length of the list is = to the capacity
+        if self.len == self.capacity:
+        # if it is we have to override the oldest item
+            if self.current != None: # head
+        # set the item to  the current value
+                self.current.value = item
+                self.current = self.current.value
+
+            else:
+                #if self.current.next is None: # tail
+                    #self.storage.tail.value = item
+
+
+
 
 
     def get(self):
