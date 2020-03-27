@@ -53,9 +53,11 @@ class LinkedList:
         prev = None
         if node is None:
             return
-        if node.next_node is not None:
-            self.reverse_list(node.next_node, node)
         else:
+            if node.next_node is not None:
+            self.reverse_list(node.next_node, node)
+
+
 
 
 
