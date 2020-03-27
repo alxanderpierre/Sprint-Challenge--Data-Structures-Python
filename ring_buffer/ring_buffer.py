@@ -6,15 +6,14 @@ class RingBuffer:
         self.capacity = capacity
         self.current = None
         self.storage = DoublyLinkedList()
+        self.len = 0
+
 
     def append(self, item):
-        pass
+
 
     def get(self):
-        # Note:  This is the only [] allowed
-        list_buffer_contents = []
 
-        # TODO: Your code here
 
         return list_buffer_contents
 
