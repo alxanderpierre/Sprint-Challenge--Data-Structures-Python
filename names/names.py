@@ -96,11 +96,21 @@ f.close()
 
 duplicates = []  # Return the list of duplicates in this data structure
 
+# add names to each binary search tree
+#name_1
+#name_2
+for names in names_1:
+    BinarySearchTree("a").insert(names)
+
+for names in names_2:
+    if BinarySearchTree("a").contains(names):
+        duplicates.append(names)
+
 # Replace the nested for loops below with your improvements
-for name_1 in names_1:
-    for name_2 in names_2:
-        if name_1 == name_2:
-            duplicates.append(name_1)
+# for name_1 in names_1:
+    # for name_2 in names_2:
+        # if name_1 == name_2:
+            # duplicates.append(name_1)
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
