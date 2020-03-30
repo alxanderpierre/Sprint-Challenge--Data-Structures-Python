@@ -1,6 +1,6 @@
 class Node:
     def __init__(self, value=None, next_node=None):
-        
+
         self.value = value
         t
         self.next_node = next_node
@@ -33,7 +33,7 @@ class LinkedList:
             return False
 
         current = self.head
-        e
+        
         while current:
 
             if current.get_value() == value:
