@@ -2,7 +2,7 @@ class Node:
     def __init__(self, value=None, next_node=None):
 
         self.value = value
-        t
+
         self.next_node = next_node
 
     def get_value(self):
@@ -33,7 +33,7 @@ class LinkedList:
             return False
 
         current = self.head
-        
+
         while current:
 
             if current.get_value() == value:
@@ -47,13 +47,17 @@ class LinkedList:
     def reverse_list(self,node,prev):
         # You must use recursion for this solution
         # current = self.head
-
-        prev = None
         if node is None:
             return
+        if node.next_node is None:
+            self.head = node
+            self.head.next_node = prev
+            return
         else:
-            if node.next_node is not None:
-                self.reverse_list(node.next_node, node)
+            self.reverse_list(node.next_node, node)
+            node.next_node= prev
+
+
 
 
 
